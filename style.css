@@ -1,4 +1,6 @@
-/* Reset Styles */
+/* --- Reset Styles --- */
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 
 *,
 *::before,
@@ -41,6 +43,15 @@ h6 {
 	overflow-wrap: break-word;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Raleway", sans-serif;
+}
+
 a {
 	text-decoration: none;
 	font: inherit;
@@ -55,7 +66,7 @@ li {
 	isolation: isolate;
 }
 
-/* Custom Styling */
+/* --- Custom Styling --- */
 
 button {
 	border: none;
@@ -64,19 +75,85 @@ button {
 body {
 	background-color: hsl(222, 26%, 15%);
 	color: #fff;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
 }
 
 header {
 	display: flex;
+	padding: 50px;
 }
+
 .list-wrap {
 	margin-left: auto;
 }
+
 .list {
 	display: flex;
 	list-style-type: none;
-	padding: 50px;
+	gap: 16px;
 }
+
 .logo {
-	padding: 20px;
+	width: 100px;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.title {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	margin-inline: 400px;
+	margin-block: 25px;
+	font-size: 40px;
+}
+
+.content {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	max-width: 500px;
+	margin-block-end: 20px;
+}
+
+button {
+	background-color: hsl(176, 68%, 64%);
+	color: #fff;
+	border-radius: 100vw;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	padding-inline: 75px;
+	padding-block: 12px;
+	font-size: small;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	max-width: 1000px;
+	margin: auto;
+	gap: 69px;
+	padding: 150px 0px;
+}
+
+.grid--item {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	max-width: auto;
+}
+
+.grid-content {
+	max-width: 340px;
+}
+
+h2 {
+	padding-top: 20px;
+	padding-bottom: 5px;
 }
